@@ -1,4 +1,3 @@
-# santo-alho
 
 <h1>Projeto sobre o Santo Alho</h1>
 
