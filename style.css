@@ -312,32 +312,64 @@ nav ul li a {
   display: grid;
   justify-content: center;
   gap: 3rem;
+
+  grid-template-rows: repeat(3, 1fr);
 }
 .img-desq {
   border: 2px solid #e85910;
   border-radius: 5rem;
 
-  background-color: rgba(255, 255, 255, 0.1);
-
   width: 25.4rem;
+
+  position: relative;
 }
 .img-desq img {
   width: 25rem;
 
-  position: relative;
-
   border-radius: 5rem;
+
+  z-index: 0;
+
+  height: 100%;
 }
-.name h3 {
+.img-desq h3 {
   color: #e85910;
 
-  text-align: center;
+  font-size: 1.2rem;
 
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+  position: absolute;
+
+  bottom: 2rem;
+  left: 3rem;
+
+  transition: all 500ms;
+}
+.img-desq:hover {
+  transform: scale(1.1);
 }
 
 /* RESPONSIVIDADE DESTAQUE */
+
+@media (min-width: 770px) {
+  body {
+    width: 114.9rem;
+
+    margin: 0 auto;
+  }
+  #prod h1 {
+    font-size: 3rem;
+
+    margin-bottom: 10rem;
+  }
+  #produtos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    justify-items: center;
+  }
+}
+
+/* TELA UNIDADES */
 
 /* width */
 ::-webkit-scrollbar {
