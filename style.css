@@ -299,22 +299,45 @@ nav ul li a {
 
 /* TELA DE DESTAQUES */
 
+#prod h1 {
+  color: #fff;
+
+  font-size: 1.8rem;
+
+  text-align: center;
+
+  margin-bottom: 4rem;
+}
 #produtos {
   display: grid;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 .img-desq {
   border: 2px solid #e85910;
   border-radius: 5rem;
+
+  background-color: rgba(255, 255, 255, 0.1);
 
   width: 25.4rem;
 }
 .img-desq img {
   width: 25rem;
 
+  position: relative;
+
   border-radius: 5rem;
 }
+.name h3 {
+  color: #e85910;
+
+  text-align: center;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* RESPONSIVIDADE DESTAQUE */
 
 /* width */
 ::-webkit-scrollbar {
