@@ -371,6 +371,60 @@ nav ul li a {
 
 /* TELA UNIDADES */
 
+#name-uni h1{
+  color: #fff;
+
+  font-size: 1.8rem;
+
+  text-align: center;
+
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+#uni{
+  display: grid;
+  gap: 5rem;
+
+  margin-top: 5rem;
+
+  justify-items: center;
+}
+#uni iframe{
+  width: 32rem;
+
+  border-radius: 5rem;
+}
+
+/* TELA UNIDADES */
+
+@media (min-width: 770px){
+  body {
+    width: 114.9rem;
+
+    margin: 0 auto;
+  }
+  #name-uni h1{
+    color: #fff;
+  
+    font-size: 3rem;
+  
+    text-align: center;
+  
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  #uni{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    justify-items: center;
+    gap: 5rem;
+  }
+  #uni iframe{
+    width: 50rem;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
