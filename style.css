@@ -31,6 +31,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  animation: top 700ms ease-in-out;
 }
 nav img {
   width: 80px;
@@ -66,6 +68,9 @@ nav ul li a {
 
   width: 30rem;
   height: 450px;
+
+  animation: top 700ms ease-in-out;
+
 }
 .box img {
   display: none;
@@ -221,6 +226,8 @@ nav ul li a {
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  animation: top 700ms ease-in-out;
 }
 .img {
   border: 2px solid #e85910;
@@ -299,6 +306,9 @@ nav ul li a {
 
 /* TELA DE DESTAQUES */
 
+#prod{
+  animation: top 700ms ease-in-out;
+}
 #prod h1 {
   color: #fff;
 
@@ -371,6 +381,9 @@ nav ul li a {
 
 /* TELA UNIDADES */
 
+#name-uni{
+  animation: top 700ms ease-in-out;
+}
 #name-uni h1{
   color: #fff;
 
@@ -440,4 +453,14 @@ nav ul li a {
 ::-webkit-scrollbar-thumb {
   background: #e85910;
   border-radius: 10px;
+}
+
+
+@keyframes top{
+  0%{
+    transform: translateY(-10rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
