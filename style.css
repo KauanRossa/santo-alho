@@ -70,7 +70,6 @@ nav ul li a {
   height: 450px;
 
   animation: top 700ms ease-in-out;
-
 }
 .box img {
   display: none;
@@ -306,7 +305,7 @@ nav ul li a {
 
 /* TELA DE DESTAQUES */
 
-#prod{
+#prod {
   animation: top 700ms ease-in-out;
 }
 #prod h1 {
@@ -332,6 +331,8 @@ nav ul li a {
   width: 25.4rem;
 
   position: relative;
+
+  transition: all 500ms;
 }
 .img-desq img {
   width: 25rem;
@@ -381,10 +382,10 @@ nav ul li a {
 
 /* TELA UNIDADES */
 
-#name-uni{
+#name-uni {
   animation: top 700ms ease-in-out;
 }
-#name-uni h1{
+#name-uni h1 {
   color: #fff;
 
   font-size: 1.8rem;
@@ -394,7 +395,7 @@ nav ul li a {
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
-#uni{
+#uni {
   display: grid;
   gap: 5rem;
 
@@ -402,7 +403,7 @@ nav ul li a {
 
   justify-items: center;
 }
-#uni iframe{
+#uni iframe {
   width: 32rem;
 
   border-radius: 5rem;
@@ -410,30 +411,30 @@ nav ul li a {
 
 /* TELA UNIDADES */
 
-@media (min-width: 770px){
+@media (min-width: 770px) {
   body {
     width: 114.9rem;
 
     margin: 0 auto;
   }
-  #name-uni h1{
+  #name-uni h1 {
     color: #fff;
-  
+
     font-size: 3rem;
-  
+
     text-align: center;
-  
+
     margin-bottom: 4rem;
     margin-top: 2rem;
   }
-  #uni{
+  #uni {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
 
     justify-items: center;
     gap: 5rem;
   }
-  #uni iframe{
+  #uni iframe {
     width: 50rem;
   }
 }
@@ -455,12 +456,11 @@ nav ul li a {
   border-radius: 10px;
 }
 
-
-@keyframes top{
-  0%{
+@keyframes top {
+  0% {
     transform: translateY(-10rem);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
